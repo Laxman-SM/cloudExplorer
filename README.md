@@ -6,7 +6,6 @@ A copy of the GNU GPL is located in `LICENSE.txt`.
 # Screenshots 
 
 ![Graph](https://www.linux-toys.com/7.png)
-![Objects](https://www.linux-toys.com/8.png)
 
 # Running Cloud Explorer in Docker
 <br>
