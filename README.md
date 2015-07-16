@@ -1,5 +1,3 @@
-# Screenshots 
-
 ![Graph](https://www.linux-toys.com/7.png)
 
 # Running Cloud Explorer in Docker
