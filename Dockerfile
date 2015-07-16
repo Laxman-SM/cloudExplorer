@@ -9,7 +9,7 @@ RUN echo "vncserver -fg" >> /opt/start.sh
 RUN chmod +x /opt/start.sh
 
 #Add main package and VNC information
-ADD cloudExplorer.tar /
+ADD cloudExplorer /
 RUN mkdir /root/.vnc
 RUN echo 123456 | vncpasswd -f > /root/.vnc/passwd
 RUN echo "twm &" > /root/.vnc/xstartup
