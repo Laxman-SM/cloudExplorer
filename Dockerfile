@@ -1,13 +1,6 @@
-#Ubuntu
-#FROM ubuntu
-#RUN apt-get update
-#RUN apt-get -y install tar xterm tightvncserver twm openjdk-8-jre
-
-#CentOS
 FROM centos
 RUN yum -y install tar xterm tigervnc-* java 
 RUN rpm -Uvh http://mirror.centos.org/centos/6/os/x86_64/Packages/xorg-x11-twm-1.0.3-5.1.el6.x86_64.rpm
-#End CentOS
 
 #Configure Startup Script
 RUN echo "#!/bin/bash" > /opt/start.sh
