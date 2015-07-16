@@ -13,7 +13,7 @@ ADD cloudExplorer /
 RUN mkdir /root/.vnc
 RUN echo 123456 | vncpasswd -f > /root/.vnc/passwd
 RUN echo "twm &" > /root/.vnc/xstartup
-RUN echo "exec java -jar /cloudExplorer/CloudExplorer.jar" >> /root/.vnc/xstartup
+RUN echo "exec java -jar /CloudExplorer.jar" >> /root/.vnc/xstartup
 
 RUN chmod 600 /root/.vnc/passwd
 RUN chmod 777 /root/.vnc/xstartup
