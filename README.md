@@ -31,10 +31,6 @@ docker run -it --net=host -e ACCESS_KEY='****' -e SECRET_KEY='***' -e ENDPOINT='
 java -jar /CloudExplorer.jar help
 ```
 
-To run the CLoud Explorer CLI 
-docker run -d --net=host cloudexplorer 
-
-You should now be able to access Cloud Explorer from VNC.
 
 # Running the container - GUI
 
@@ -45,7 +41,7 @@ docker run -d --net=host cloudexplorer
 
 To connect to the container, you can use a VNC client such as vncviewer to connect to display #1.
 ```
-	vncviewer docker_host_ip:1
+vncviewer docker_host_ip:1
 ```
 After you login VNC with the default password of 123456, you should see the GUI.
 
@@ -53,7 +49,7 @@ After you login VNC with the default password of 123456, you should see the GUI.
 
 If you want to use the Cloud Explorer CLI, start a terminal in the VNC session by right clicking on the desktop and choose "xterm". Finally, run the following command:
 ```
-	java -jar /cloudExplorer/CloudExplorer.jar help
+java -jar /cloudExplorer/CloudExplorer.jar help
 ```	
 
 
