@@ -9,7 +9,7 @@ cd cloudExplorer
 docker build -t cloudexplorer .
 docker run -d --net=host cloudexplorer 
 ```
-If you want to use your existing S3 configuration file, copy s3.config from your home directory into the cloudExplorer directory. Modify DockerFile by adding the following before the CMD line:
+If you want to use your existing S3 configuration file, copy s3.config from your home directory into the cloudExplorer directory. Finally, modify DockerFile by adding the following before the CMD line:
 ```
 ADD s3.config /root/
 ```
