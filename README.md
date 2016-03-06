@@ -25,7 +25,7 @@ docker build -t cloudexplorer .
 
 To use enviornment variables to store S3 account information when using the Cloud Explorer CLI instead of uploading an s3.config file:
 ```
-docker run -it --net=host -e ACCESS_KEY='****' -e SECRET_KEY='***' -e ENDPOINT='https://s3.amazonaws.com:443' -e REGION='default' cloudexplorer 
+docker run -it --net=host -e ACCESS_KEY='****' -e SECRET_KEY='***' -e ENDPOINT='https://s3.amazonaws.com:443' -e REGION='default' cloudexplorer bash
 java -jar /CloudExplorer.jar help
 ```
 
