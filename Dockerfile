@@ -2,8 +2,7 @@ FROM ubuntu
 RUN apt-get update;
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:openjdk-r/ppa
-RUN apt-get update;
-RUN apt-get -y install fvwm xterm tightvncserver openjdk-8-jdk xfonts-base
+RUN apt-get update;apt-get -y install fvwm xterm tightvncserver openjdk-8-jdk xfonts-base
 
 #Configure Startup Script
 RUN echo "#!/bin/bash" > /opt/start.sh
