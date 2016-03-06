@@ -1,5 +1,3 @@
-![Graph](https://www.linux-toys.com/7.png)
-
 # Running Cloud Explorer in Docker
 First
 The following steps will explain how to run Cloud Explorer from a Docker container. The template will install an Ubuntu container using the FVWM window manager. 
