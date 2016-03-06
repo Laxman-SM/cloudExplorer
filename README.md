@@ -22,7 +22,7 @@ Build the container
 docker build -t cloudexplorer .
 ```
 
-# Running the container - CLII
+# Running the container - CLI
 
 
 To use enviornment variables to store S3 account information when using the Cloud Explorer CLI instead of uploading an s3.config file:
