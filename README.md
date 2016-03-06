@@ -42,7 +42,7 @@ To access to the container, use a VNC client such as vncviewer to connect to dis
 ```
 vncviewer docker_host_ip:1
 ```
-The default passwod for VNC is 123456. You should see the Cloud Explorer GUI after you authenticate.
+The default password for VNC is 123456. You should see the Cloud Explorer GUI after you authenticate.
 
 # Using the CLI in VNC 
 
