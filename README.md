@@ -38,7 +38,7 @@ Run the container:
 docker run -d --net=host cloudexplorer 
 ````
 
-To connect to the container, you can use a VNC client such as vncviewer to connect to display #1.
+To access to the container, use a VNC client such as vncviewer to connect to display #1.
 ```
 vncviewer docker_host_ip:1
 ```
