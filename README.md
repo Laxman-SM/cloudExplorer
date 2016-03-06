@@ -1,4 +1,5 @@
 # Running Cloud Explorer in Docker
+
 The following steps will explain how to run Cloud Explorer from a Docker container. The template will install an Ubuntu container using the FVWM window manager. 
 
 # Creating the container
@@ -28,6 +29,7 @@ docker run -it --net=host -e ACCESS_KEY='****' -e SECRET_KEY='***' -e ENDPOINT='
 java -jar /CloudExplorer.jar help
 ```
 
+If you want to use the Cloud Explorer CLI from a VNC session, skip to "Using the CLI in VNC".
 
 # Running the container - GUI
 
