@@ -2,7 +2,7 @@
 
 # Running Cloud Explorer in Docker
 <br>
-The following steps will explain how to run CloudExplorer from a Docker container. The template will install a CentOS 7 container with TWM and Xterm.
+The following steps will explain how to run Cloud Explorer from a Docker container. The template will install an Ubuntu container using the FVWM window manager.
 ```
 git clone https://github.com/rusher81572/cloudExplorer.git -b docker
 cd cloudExplorer
@@ -13,6 +13,13 @@ If you want to use your existing S3 configuration file, copy s3.config from your
 ```
 ADD s3.config /root/
 ```
+
+To use enviornment variables to store S3 account information when using the  Cloud Explorer CLI instead of uploading an s3.config file:
+```
+docker run -it --net=host -e ACCESS_KEY='****' -e SECRET_KEY='***' -e ENDPOINT='https://s3.amazonaws.com:443' -e REGION='default' cloudexplorer 
+java -jar /CloudExplorer.jar help
+```
+
 Save the file and repeat the "docker build" and "docker run" commands from earlier.
 
 To connect to the container, you can use a VNC client such as vncviewer to connect to display #1.

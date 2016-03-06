@@ -3,7 +3,7 @@ RUN apt-get update;
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:openjdk-r/ppa
 RUN apt-get update;
-RUN apt-get -y install fvwm tar xterm tightvncserver openjdk-8-jdk firefox xfonts-base
+RUN apt-get -y install fvwm xterm tightvncserver openjdk-8-jdk xfonts-base
 
 #Configure Startup Script
 RUN echo "#!/bin/bash" > /opt/start.sh
@@ -21,6 +21,5 @@ RUN echo "exec java -jar /CloudExplorer.jar" >> /root/.vnc/xstartup
 
 RUN chmod 600 /root/.vnc/passwd
 RUN chmod 777 /root/.vnc/xstartup
-RUN dbus-uuidgen > /var/lib/dbus/machine-id
 ENV USER root
 CMD /opt/start.sh
